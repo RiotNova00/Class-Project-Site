@@ -48,14 +48,29 @@ height: 100px;
 background-color: #987654;
 margin: 1rem;}
 
-.giff {margin-left: 500px;
+.giff {margin-left: 10px; float: left;
 }
 .yepp{ background-image: url("clouds.jpg");
 background-size: cover;
 padding:220px;
 border: 5px dashed #7920b8;
 text-align:center;}
-.gif {margin-left: 100px;}
+.gif {margin-left: 75px;
+float: left;}
+
+.goober{background-color:red;
+animation-name: example;
+animation-duration:5s;
+animation-iteration-count: infinite;
+ margin: 30px;
+padding:20px;}
+@keyframes example{
+  0%   {background-color: #ffe29d;}
+  25%  {background-color: #ff9894;}
+  50%  {background-color: #afffa8;}
+  100% {background-color: #d0c4ff;}}
+
+  .clear {float: none; clear: both;}
 </style>
   </head>
   <body>
@@ -70,12 +85,15 @@ text-align:center;}
   </ul>
 </div>
 <div id="box6"> </div>
+<div class="goober">
 <div class="gif">
   <img src="furb.gif" alt="lady melting">
   </div>
 <div class="giff">
   <img src="melt.gif" alt="lady melting">
   </div>
+  <br class="clear" />
+</div>
 
   <div class="hellobox">
   <h1>Hello!</h1>
